@@ -7,5 +7,7 @@ export function FormComponent() {
     setValue(event.target.value);
   };
 
-  return <input type="text" value={value} onChange={handleChange} />;
+  return (
+    <input type="text" value={value} onChange={handleChange} title="text" />
+  );
 }
